@@ -6,21 +6,25 @@ import { Input } from "./ui/input";
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 py-20 border-b border-b-black/60">
+    <div className="grid grid-cols-1 md:grid-cols-2  gap-4 py-20 border-b border-b-black/60">
       <div className="space-y-4">
         <Logo />
-        <Button variant="ghost">
-          <Mail className="size-4 mr-2" />
-          help@yarn.com
-        </Button>
+        <a href="mailto:sounds@those.app">
+          <Button variant="ghost">
+            <Mail className="size-4 mr-2" />
+            sounds@those.app
+          </Button>
+        </a>
 
-        <Button variant="ghost">
-          <Phone className="size-4 mr-2" />
-          help@yarn.com
-        </Button>
+        <a href="tel:+2349056206707">
+          <Button variant="ghost">
+            <Phone className="size-4 mr-2" />
+            +234 905 620 6707
+          </Button>
+        </a>
       </div>
 
-      <div className="space-y-4">
+      {/* <div className="space-y-4">
         <div className=" text-lg font-bold">Legal</div>
         <p>Terms Of Use</p>
         <p>Privacy Policy</p>
@@ -32,7 +36,7 @@ const Footer = () => {
         <p>Take Tour</p>
         <p>Live Chat</p>
         <p>Reviews</p>
-      </div>
+      </div> */}
 
       <div className="space-y-4">
         <div className=" text-lg font-bold">Newsletter</div>

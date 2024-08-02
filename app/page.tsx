@@ -67,6 +67,15 @@ export default function Home() {
               </ContentItem>
 
               {/* COMING SOON */}
+
+              <div
+                id="coming-soon"
+                className="flex flex-col items-center justify-center"
+              >
+                <div className=" tracking-wider">PRODUCT</div>
+                <h2 className="text-4xl font-bold">COMING SOON</h2>
+              </div>
+
               <ContentItem
                 imagePath="/coming-soon/screen.webp"
                 flip
@@ -122,8 +131,8 @@ export default function Home() {
             </div>
 
             <Footer />
-            <div className="py-5 text-center">
-              Copyright 2024 Yarn.com all rights reserved
+            <div className="py-5 text-center text-sm">
+              Copyright 2024 musicyarn.com all rights reserved
             </div>
           </div>
         </div>

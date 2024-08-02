@@ -20,8 +20,8 @@ const ContentItem = ({
   return (
     <div
       className={cn(
-        "flex items-center justify-center gap-4",
-        flip && "flex-row-reverse"
+        "flex items-center justify-center gap-4 md:flex-row flex-col-reverse",
+        flip && "flex-col-reverse md:flex-row-reverse"
       )}
     >
       <div className=" w-full lg:w-[50%] ">

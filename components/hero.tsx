@@ -8,7 +8,7 @@ const Hero = () => {
     <div className=" flex items-center justify-center ">
       {/* Optional overlay for better text visibility */}
       {/* <div className="absolute inset-0 bg-black opacity-0 lg:opacity-20"></div> */}
-      <div className=" h-full lg:h-[90dvh] w-full flex flex-col-reverse lg:flex-row lg:items-center gap-y-0 md:gap-y-16 lg:gap-y-0 lg:justify-center ">
+      <div className=" h-full xl:h-[90dvh] w-full flex flex-col-reverse lg:flex-row xl:items-start gap-y-0 md:gap-y-16 lg:gap-y-0 lg:justify-center ">
         <div className="relative z-10 w-full lg:w-[50%] ">
           <div className="w-full text-left space-y-4 sm:space-y-8 py-8 flex flex-col items-start">
             <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
@@ -36,7 +36,7 @@ const Hero = () => {
 
         <div className=" flex z-10  bg-opacity-30 justify-between border border-white text-center lg:w-[50%] lg:ml-10 p-4 px-5 sm:p-8 rounded-xl relative">
           {/* HERO IMAGES */}
-          <div className=" relative h-[60dvh] sm:h-[50dvh] lg:h-[80dvh] w-full">
+          <div className=" relative h-[40dvh] sm:h-[50dvh] lg:h-[80dvh] w-full">
             <Image
               className=" object-contain"
               fill
@@ -45,7 +45,7 @@ const Hero = () => {
             />
 
             <div className="absolute inset-0 z-20 ">
-              <div className="relative h-[60dvh] sm:h-[50dvh] lg:h-[80dvh]">
+              <div className="relative h-[40dvh] sm:h-[50dvh] lg:h-[80dvh]">
                 <Image
                   className=" object-contain"
                   fill
@@ -53,8 +53,8 @@ const Hero = () => {
                   src="/assets/images/hero/hero_2.webp"
                 />
 
-                <div className="absolute inset-0 -left-[10rem] -top-[3rem] z-30 ">
-                  <div className="relative h-[60dvh] sm:h-[50dvh] lg:h-[80dvh]">
+                <div className="absolute inset-0 -left-[5rem] lg:-left-[10rem] -top-[1rem] md:-top-[2rem] lg:-top-[3rem] z-30 ">
+                  <div className="relative h-[40dvh] sm:h-[50dvh] lg:h-[80dvh]">
                     <Image
                       className=" object-contain"
                       fill

@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,9 @@ const Navbar = () => {
       <div className="flex w-full items-center justify-between">
         <Logo />
 
-        <Button size="lg">Download</Button>
+        <Button size="lg" asChild>
+          <Link href="#coming-soon">Coming soon</Link>
+        </Button>
       </div>
     </div>
   );
