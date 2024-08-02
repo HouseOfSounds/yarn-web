@@ -131,7 +131,7 @@ export default function Home() {
 
             <Footer />
             <div className="py-5 text-center text-sm">
-              Copyright 2024 musicyarn.com all rights reserved
+              Copyright 2024 Yarn all rights reserved
             </div>
           </div>
         </div>
