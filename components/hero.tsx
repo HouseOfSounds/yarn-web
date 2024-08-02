@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className=" ml-auto flex z-10  bg-opacity-30 justify-between border border-white text-center lg:w-[50%] lg:ml-10 p-4 px-5 sm:p-8 rounded-xl relative">
+        <div className=" flex z-10  bg-opacity-30 justify-between border border-white text-center lg:w-[50%] lg:ml-10 p-4 px-5 sm:p-8 rounded-xl relative">
           {/* HERO IMAGES */}
           <div className=" relative h-[40dvh] sm:h-[50dvh] lg:h-[80dvh] w-full">
             <Image

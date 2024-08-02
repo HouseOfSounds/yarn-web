@@ -17,13 +17,13 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://wa.me/+2349056206707"
+          href="https://wa.me/+447405249625"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button variant="ghost">
             <MessageCircle className="size-4 mr-2" />
-            +234 905 620 6707
+            +44 7405 24 9625
           </Button>
         </a>
       </div>
