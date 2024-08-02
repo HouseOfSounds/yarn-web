@@ -20,7 +20,8 @@ const Hero = () => {
               journey is just a click away.
             </p>
             <Button size="lg">
-              Get Started <MoveRight className="size-5 md:size-6 ml-2" />
+              Coming soon
+              {/* <MoveRight className="size-5 md:size-6 ml-2" /> */}
             </Button>
 
             <div className=" hidden lg:inline-flex relative h-64 lg:h-80 w-[30dvw]">
