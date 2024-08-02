@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
 import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,14 +17,13 @@ const Hero = () => {
             </div>
             <p className=" text-sm sm:text-base lg::max-w-2xl mr-auto">
               Explore new artists, join exclusive fan clubs, and immerse
-              yourself in the music culture with Soundtalk. Where your musical
+              yourself in the music culture with Yarn. Where your musical
               journey is just a click away.
             </p>
-            <Button size="lg">
-              Coming soon
-              {/* <MoveRight className="size-5 md:size-6 ml-2" /> */}
-            </Button>
 
+            <Button size="lg" asChild>
+              <Link href="#coming-soon">Coming soon</Link>
+            </Button>
             <div className=" hidden lg:inline-flex relative h-64 lg:h-80 w-[30dvw]">
               <Image
                 className=" object-contain"
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className=" flex z-10  bg-opacity-30 justify-between border border-white text-center lg:w-[50%] lg:ml-10 p-4 px-5 sm:p-8 rounded-xl relative">
+        <div className=" ml-auto flex z-10  bg-opacity-30 justify-between border border-white text-center lg:w-[50%] lg:ml-10 p-4 px-5 sm:p-8 rounded-xl relative">
           {/* HERO IMAGES */}
           <div className=" relative h-[40dvh] sm:h-[50dvh] lg:h-[80dvh] w-full">
             <Image

@@ -50,6 +50,6 @@ export const faqs = [
   {
     question: "How can I contact support if I have issues with the app?",
     answer:
-      "You can contact our support team through the app's help section or by emailing support@yarnapp.com. We are here to assist you with any questions or issues you may have.",
+      "You can contact our support team through the app's help section or by emailing sounds@those.app. We are here to assist you with any questions or issues you may have.",
   },
 ];

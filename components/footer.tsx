@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 import { Input } from "./ui/input";
 
 const Footer = () => {
@@ -16,9 +16,13 @@ const Footer = () => {
           </Button>
         </a>
 
-        <a href="tel:+2349056206707">
+        <a
+          href="https://wa.me/+2349056206707"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button variant="ghost">
-            <Phone className="size-4 mr-2" />
+            <MessageCircle className="size-4 mr-2" />
             +234 905 620 6707
           </Button>
         </a>

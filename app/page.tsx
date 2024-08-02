@@ -67,12 +67,11 @@ export default function Home() {
               </ContentItem>
 
               {/* COMING SOON */}
-
               <div
                 id="coming-soon"
                 className="flex flex-col items-center justify-center"
               >
-                <div className=" tracking-wider">PRODUCT</div>
+                <div className=" tracking-wider text-[#FF5555]">PRODUCT</div>
                 <h2 className="text-4xl font-bold">COMING SOON</h2>
               </div>
 
