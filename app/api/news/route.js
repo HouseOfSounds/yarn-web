@@ -14,9 +14,9 @@ export async function POST(req) {
   const { email } = json;
   try {
     const res = await sendMail(
-      "Yarn Email Newsletetr",
+      "Yarn Email Newsletter",
       "",
-      `${email} joined our Newsletetr mailing list`
+      `${email} joined our Newsletter mailing list`
     );
 
     console.log(res, "res");
