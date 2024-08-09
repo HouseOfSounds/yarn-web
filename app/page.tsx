@@ -104,25 +104,23 @@ export default function Home() {
                   weeks. join our notifications list to get up dates on our
                   progress & our Launch.
                 </div>
-                <form name="waitlist" netlify>
-                  <div className="w-full flex items-center gap-2">
-                    <Input
-                      value={email}
-                      type="email"
-                      className="!py-4"
-                      placeholder="Your email"
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                    <Button
-                      onClick={submit}
-                      size="lg"
-                      disabled={load}
-                      className="disabled:opacity-50"
-                    >
-                      Join
-                    </Button>
-                  </div>
-                </form>
+                <div className="w-full flex items-center gap-2">
+                  <Input
+                    value={email}
+                    type="email"
+                    className="!py-4"
+                    placeholder="Your email"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <Button
+                    onClick={submit}
+                    size="lg"
+                    disabled={load}
+                    className="disabled:opacity-50"
+                  >
+                    Join
+                  </Button>
+                </div>
               </ContentItem>
             </div>
 

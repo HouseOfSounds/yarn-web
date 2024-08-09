@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import axios from "axios";
+import { Mail, MessageCircle } from "lucide-react";
+import { useState } from "react";
+import { toast } from "react-toastify";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
-import { Mail, MessageCircle, Phone } from "lucide-react";
 import { Input } from "./ui/input";
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -24,7 +24,6 @@ const Footer = () => {
   };
   return (
     <div className="grid grid-cols-1 md:grid-cols-2  gap-4 py-20 border-b border-b-black/60">
-      <ToastContainer />
       <div className="space-y-4">
         <Logo />
         <a href="mailto:sounds@those.app">
@@ -64,25 +63,23 @@ const Footer = () => {
         <div className=" text-lg font-bold">Newsletter</div>
         <p>Stay Up To Date</p>
 
-        <form name="nesletter" netlify>
-          <div className="w-full flex items-center gap-2">
-            <Input
-              onChange={(e) => setEmail(e.target.value)}
-              type="email"
-              className="!py-4"
-              placeholder="Your email"
-              value={email}
-            />
-            <Button
-              onClick={submit}
-              size="lg"
-              disabled={load}
-              className="disabled:copacity-50"
-            >
-              Subscribe
-            </Button>
-          </div>
-        </form>
+        <div className="w-full flex items-center gap-2">
+          <Input
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            className="!py-4"
+            placeholder="Your email"
+            value={email}
+          />
+          <Button
+            onClick={submit}
+            size="lg"
+            disabled={load}
+            className="disabled:copacity-50"
+          >
+            Subscribe
+          </Button>
+        </div>
       </div>
     </div>
   );
