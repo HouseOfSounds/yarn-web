@@ -64,23 +64,25 @@ const Footer = () => {
         <div className=" text-lg font-bold">Newsletter</div>
         <p>Stay Up To Date</p>
 
-        <div className="w-full flex items-center gap-2">
-          <Input
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-            className="!py-4"
-            placeholder="Your email"
-            value={email}
-          />
-          <Button
-            onClick={submit}
-            size="lg"
-            disabled={load}
-            className="disabled:copacity-50"
-          >
-            Subscribe
-          </Button>
-        </div>
+        <form name="nesletter" netlify>
+          <div className="w-full flex items-center gap-2">
+            <Input
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              className="!py-4"
+              placeholder="Your email"
+              value={email}
+            />
+            <Button
+              onClick={submit}
+              size="lg"
+              disabled={load}
+              className="disabled:copacity-50"
+            >
+              Subscribe
+            </Button>
+          </div>
+        </form>
       </div>
     </div>
   );
