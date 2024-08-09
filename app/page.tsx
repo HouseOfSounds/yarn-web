@@ -1,3 +1,4 @@
+"use client";
 import ContentItem from "@/components/content-item";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
@@ -6,13 +7,31 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { faqs, features } from "@/constants";
 import { cn } from "@/lib/utils";
+import axios from "axios";
 import { Sparkles } from "lucide-react";
-import Image from "next/image";
-import { title } from "process";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Home() {
+  const [email, setEmail] = useState("");
+  const [load, setLoad] = useState(false);
+  const submit = async () => {
+    setLoad(true);
+    try {
+      const { data } = await axios.post("/api", { email });
+      if (data?.success) {
+        setEmail("");
+        toast.success("Email added to waitlist successfully");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+    setLoad(false);
+  };
+
   return (
     <main className="h-full overflow-auto">
+      <ToastContainer />
       <div className="mx-auto max-w-screen-xl h-full px-6 ">
         <div className="h-full flex flex-col">
           <div className="flex flex-1 flex-col">
@@ -87,11 +106,20 @@ export default function Home() {
                 </div>
                 <div className="w-full flex items-center gap-2">
                   <Input
+                    value={email}
                     type="email"
                     className="!py-4"
                     placeholder="Your email"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
-                  <Button size="lg">Join</Button>
+                  <Button
+                    onClick={submit}
+                    size="lg"
+                    disabled={load}
+                    className="disabled:opacity-50"
+                  >
+                    Join
+                  </Button>
                 </div>
               </ContentItem>
             </div>
