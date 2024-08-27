@@ -158,7 +158,7 @@ export default function Home() {
             </div>
 
             <Footer />
-            <div className="py-5 text-center text-sm">
+            <div className="py-5 text-center text-sm capitalize">
               Copyright 2024 The House of Sounds all rights reserved
             </div>
           </div>
