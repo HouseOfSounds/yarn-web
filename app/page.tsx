@@ -117,7 +117,7 @@ export default function Home() {
                   <Button
                     onClick={submit}
                     size="lg"
-                    disabled={load}
+                    disabled={email === "" || load}
                     className="disabled:opacity-50"
                   >
                     Join

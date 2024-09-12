@@ -74,7 +74,7 @@ const Footer = () => {
           <Button
             onClick={submit}
             size="lg"
-            disabled={load}
+            disabled={email === "" || load}
             className="disabled:copacity-50"
           >
             Subscribe
