@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
 
             <Button size="lg" asChild>
-              <Link href="#coming-soon">Coming soon</Link>
+              <Link href="#coming-soon">Join Our Waitlist</Link>
             </Button>
             <div className=" hidden lg:inline-flex relative h-64 lg:h-80 w-[30dvw]">
               <Image

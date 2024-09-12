@@ -100,9 +100,11 @@ export default function Home() {
                 title="Transform Your Music Discovery Experience!"
               >
                 <div className="text-sm text-muted-foreground">
-                  Yarn is currently in development & will be completed in a few
+                  {/* Yarn is currently in development & will be completed in a few
                   weeks. join our notifications list to get up dates on our
-                  progress & our Launch.
+                  progress & our Launch. */}
+                  Join our waitlist to enter our December concert ticket
+                  giveaway.
                 </div>
                 <div className="w-full flex items-center gap-2">
                   <Input
