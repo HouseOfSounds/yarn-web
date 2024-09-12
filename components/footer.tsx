@@ -9,8 +9,15 @@ import { Input } from "./ui/input";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [load, setLoad] = useState(false);
+
+  const validateEmail = (email: string) => {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
   const submit = async () => {
     setLoad(true);
+
     try {
       const { data } = await axios.post("/api/news", { email });
       if (data?.success) {
@@ -72,7 +79,7 @@ const Footer = () => {
             value={email}
           />
           <Button
-            onClick={submit}
+            onClick={() => (validateEmail(email) ? submit() : () => {})}
             size="lg"
             disabled={email === "" || load}
             className="disabled:copacity-50"
