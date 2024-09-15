@@ -9,7 +9,6 @@ import { faqs, features } from "@/constants";
 import { cn } from "@/lib/utils";
 import axios from "axios";
 import { Sparkles } from "lucide-react";
-import Script from "next/script";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -38,24 +37,6 @@ export default function Home() {
 
   return (
     <main className="h-full overflow-auto">
-      <Script
-        strategy="afterInteractive"
-        src="https://www.clarity.ms/tag/o3nfjjsba0"
-        onLoad={() => {
-          console.log("load");
-        }}
-        onError={() => {
-          console.log("error");
-        }}
-        async
-        defer
-        data-domain="musicyarns.com"
-        data-clarity="o3nfjjsba0"
-        data-auto-clarity="false"
-        data-sitekey="o3nfjjsba0"
-        data-website-id="o3nfjjsba0"
-        data-website-key="o3nfjjsba0"
-      />
       <ToastContainer />
       <div className="mx-auto max-w-screen-xl h-full px-6 ">
         <div className="h-full flex flex-col">

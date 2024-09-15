@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
+import Script from "next/script";
 
 // const id = "o3nfjjsba0";
 // clarity.init(id);
@@ -22,6 +23,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        strategy="afterInteractive"
+        src="https://www.clarity.ms/tag/o3nfjjsba0"
+        async
+        defer
+        data-domain="musicyarns.com"
+        data-clarity="o3nfjjsba0"
+        data-auto-clarity="false"
+        data-sitekey="o3nfjjsba0"
+        data-website-id="o3nfjjsba0"
+        data-website-key="o3nfjjsba0"
+      />
       <body className={font.className}>{children}</body>
     </html>
   );
