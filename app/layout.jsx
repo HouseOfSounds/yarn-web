@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google";
 import Script from "next/script";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
+import Head from "next/head";
 
 // const id = "o3nfjjsba0";
 // clarity.init(id);

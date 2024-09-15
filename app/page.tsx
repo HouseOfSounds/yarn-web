@@ -10,9 +10,11 @@ import { cn } from "@/lib/utils";
 import axios from "axios";
 import { Sparkles } from "lucide-react";
 import Script from "next/script";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { clarity } from "react-microsoft-clarity";
 import { ToastContainer, toast } from "react-toastify";
 
+const id = "o3nfjjsba0";
 export default function Home() {
   const [email, setEmail] = useState("");
   const [load, setLoad] = useState(false);
@@ -35,7 +37,9 @@ export default function Home() {
     }
     setLoad(false);
   };
-
+  useEffect(() => {
+    clarity.init(id);
+  }, []);
   return (
     <main className="h-full overflow-auto">
       <Script
