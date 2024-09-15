@@ -41,6 +41,20 @@ export default function Home() {
       <Script
         strategy="afterInteractive"
         src="https://www.clarity.ms/tag/o3nfjjsba0"
+        onLoad={() => {
+          console.log("load");
+        }}
+        onError={() => {
+          console.log("error");
+        }}
+        async
+        defer
+        data-domain="musicyarns.com"
+        data-clarity="o3nfjjsba0"
+        data-auto-clarity="false"
+        data-sitekey="o3nfjjsba0"
+        data-website-id="o3nfjjsba0"
+        data-website-key="o3nfjjsba0"
       />
       <ToastContainer />
       <div className="mx-auto max-w-screen-xl h-full px-6 ">
