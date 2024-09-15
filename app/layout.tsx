@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
+import { clarity } from "react-microsoft-clarity";
+
+const id = "";
+clarity.init(id);
 
 const font = Montserrat({
   subsets: ["latin"],
