@@ -9,6 +9,7 @@ import { faqs, features } from "@/constants";
 import { cn } from "@/lib/utils";
 import axios from "axios";
 import { Sparkles } from "lucide-react";
+import Script from "next/script";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -37,6 +38,10 @@ export default function Home() {
 
   return (
     <main className="h-full overflow-auto">
+      <Script
+        strategy="afterInteractive"
+        src="https://www.clarity.ms/tag/o3nfjjsba0"
+      />
       <ToastContainer />
       <div className="mx-auto max-w-screen-xl h-full px-6 ">
         <div className="h-full flex flex-col">

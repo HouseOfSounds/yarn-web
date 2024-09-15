@@ -19,11 +19,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={font.className}>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.clarity.ms/tag/o3nfjjsba0"
-        />
-
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            strategy="afterInteractive"
+            src="https://www.clarity.ms/tag/o3nfjjsba0"
+          />
+        )}
         {children}
       </body>
     </html>
