@@ -40,7 +40,7 @@ export default function Home() {
     <main className="h-full overflow-auto">
       <Script
         strategy="afterInteractive"
-        src="https://www.clarity.ms/tag/o3nfjjsba0" // Replace with your Clarity ID
+        src="https://www.clarity.ms/tag/o3nfjjsba0"
       />
       <ToastContainer />
       <div className="mx-auto max-w-screen-xl h-full px-6 ">
