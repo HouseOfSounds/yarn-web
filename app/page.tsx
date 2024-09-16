@@ -13,6 +13,9 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { clarity } from "react-microsoft-clarity";
 import { ToastContainer, toast } from "react-toastify";
+import TwitterConvTrkr from "react-twitter-conversion-tracker";
+TwitterConvTrkr.init("onqj6");
+TwitterConvTrkr.pageView();
 
 const id = "o3nfjjsba0";
 export default function Home() {
@@ -45,6 +48,11 @@ export default function Home() {
       <Script
         strategy="afterInteractive"
         src="https://www.clarity.ms/tag/o3nfjjsba0"
+      />
+      {/* Twitter Pixel */}
+      <Script
+        strategy="afterInteractive"
+        src="https://static.ads-twitter.com/uwt.js"
       />
       <ToastContainer />
       <div className="mx-auto max-w-screen-xl h-full px-6 ">
