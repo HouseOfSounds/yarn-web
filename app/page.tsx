@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import { clarity } from "react-microsoft-clarity";
 import { ToastContainer, toast } from "react-toastify";
 import TwitterConvTrkr from "react-twitter-conversion-tracker";
-TwitterConvTrkr.init("onqj6");
+TwitterConvTrkr.init("tw-onqj6-onqqk");
 TwitterConvTrkr.pageView();
 
 const id = "o3nfjjsba0";
