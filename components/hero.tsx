@@ -13,12 +13,11 @@ const Hero = () => {
         <div className="relative z-10 w-full lg:w-[50%] ">
           <div className="w-full text-left space-y-4 sm:space-y-8 py-8 flex flex-col items-start">
             <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
-              Connect with Your Favorite Music like Never Before
+              Connect With Your Friends & Fellow Fans Over Your Favorite Songs
             </div>
             <p className=" text-sm sm:text-base lg::max-w-2xl mr-auto">
-              Explore new artists, join exclusive fan clubs, and immerse
-              yourself in the music culture with Yarn. Where your musical
-              journey is just a click away.
+              With Yarn you can join discussions about your favorite music &
+              engage with like minded fans & your friends about the songs.
             </p>
 
             <Button size="lg" asChild>
