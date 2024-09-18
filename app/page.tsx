@@ -13,9 +13,9 @@ import Script from "next/script";
 import { useEffect, useState } from "react";
 import { clarity } from "react-microsoft-clarity";
 import { ToastContainer, toast } from "react-toastify";
-import TwitterConvTrkr from "react-twitter-conversion-tracker";
-TwitterConvTrkr.init("tw-onqj6-onqqk");
-TwitterConvTrkr.pageView();
+// import TwitterConvTrkr from "react-twitter-conversion-tracker";
+// TwitterConvTrkr.init("tw-onqj6-onqqk");
+// TwitterConvTrkr.pageView();
 
 const id = "o3nfjjsba0";
 export default function Home() {
