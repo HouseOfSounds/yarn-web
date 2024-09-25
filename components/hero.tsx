@@ -1,8 +1,35 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import ContentItem from "./content-item";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Hero = () => {
+  const [email, setEmail] = useState("");
+  const [load, setLoad] = useState(false);
+
+  const validateEmail = (email: string) => {
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  };
+  const submit = async () => {
+    setLoad(true);
+    try {
+      const { data } = await axios.post("/api", { email });
+      if (data?.success) {
+        setEmail("");
+        toast.success("Email added to waitlist successfully");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+    setLoad(false);
+  };
   return (
     <div className=" flex items-center justify-center ">
       {/* Optional overlay for better text visibility */}
@@ -18,9 +45,25 @@ const Hero = () => {
               engage with like minded fans & your friends about the songs.
             </p>
 
-            <Button size="lg" asChild>
-              <Link href="#coming-soon">Join Our Waitlist</Link>
+            <div className="w-full flex items-center gap-2">
+              <Input
+                value={email}
+                type="email"
+                className="!py-4"
+                placeholder="Your email"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+
+            <Button
+              onClick={() => (validateEmail(email) ? submit() : () => {})}
+              size="lg"
+              disabled={email === "" || load}
+              className="disabled:opacity-50"
+            >
+              Join Our Waitlist
             </Button>
+
             <div className=" hidden lg:inline-flex relative h-64 lg:h-80 w-[30dvw]">
               <Image
                 className=" object-contain"
