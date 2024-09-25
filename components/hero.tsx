@@ -37,12 +37,15 @@ const Hero = () => {
       <div className=" h-full xl:h-[90dvh] w-full flex flex-col-reverse lg:flex-row xl:items-start gap-y-0 md:gap-y-16 lg:gap-y-0 lg:justify-center ">
         <div className="relative z-10 w-full lg:w-[50%] ">
           <div className="w-full text-left space-y-4 sm:space-y-8 py-8 flex flex-col items-start">
-            <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
-              Connect With Your Friends & Fellow Fans Over Your Favorite Songs
+            <div className="text-4xl lg:text-5xl font-bold relative">
+              Join the Yarn Community to Discuss, Share, & Discover Music With
+              Your Friends
             </div>
             <p className=" text-sm sm:text-base lg::max-w-2xl mr-auto">
-              With Yarn you can join discussions about your favorite music &
-              engage with like minded fans & your friends about the songs.
+              Amplify Your Music Passion, Be Part of the New Music Social
+              Experience <br /> <b> - Sign Up for the Yarn Waitlist.</b> <br />{" "}
+              Early joiners stand the chance to win tickets to concerts in Lagos
+              this December
             </p>
 
             <div className="w-full flex items-center gap-2">
