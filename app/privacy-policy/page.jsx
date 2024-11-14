@@ -18,10 +18,10 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-2xl font-semibold mt-6 mb-3">1. Introduction</h2>
           <p className="text-lg text-gray-700 mb-4">
-            Welcome to Yarn (the "App"). We value your privacy and are committed
-            to protecting your personal data. This Privacy Policy explains how
-            we collect, use, share, and protect your information when you use
-            our App and related services.
+            Welcome to Yarn (the &quot;App&quot;). We value your privacy and are
+            committed to protecting your personal data. This Privacy Policy
+            explains how we collect, use, share, and protect your information
+            when you use our App and related services.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-3">
@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
             We use the information we collect to:
           </p>
           <ul className="list-disc pl-8 space-y-2 text-lg text-gray-700">
-            <li>Provide and improve the App's features and services.</li>
+            <li>Provide and improve the App&quot;s features and services.</li>
             <li>Personalize your experience within the App.</li>
             <li>
               Communicate with you about updates, promotions, and other relevant
@@ -127,7 +127,7 @@ const PrivacyPolicy = () => {
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-3">
-            7. Children's Privacy
+            7. Children&quot;s Privacy
           </h2>
           <p className="text-lg text-gray-700 mb-4">
             Our App is not intended for use by children under the age of 13. We
@@ -141,9 +141,9 @@ const PrivacyPolicy = () => {
           </h2>
           <p className="text-lg text-gray-700 mb-4">
             We may update this Privacy Policy from time to time. When we do, we
-            will revise the "Effective Date" at the top of this policy. We
-            encourage you to review this Privacy Policy periodically to stay
-            informed about how we are protecting your information.
+            will revise the &quot;Effective Date&quot; at the top of this
+            policy. We encourage you to review this Privacy Policy periodically
+            to stay informed about how we are protecting your information.
           </p>
 
           <h2 className="text-2xl font-semibold mt-6 mb-3">9. Contact Us</h2>
