@@ -1,10 +1,11 @@
 import axios from "axios";
-import { Mail, MessageCircle } from "lucide-react";
+import { Book, Mail, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import Link from "next/link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -50,6 +51,12 @@ const Footer = () => {
             +44 7405 24 9625
           </Button>
         </a>
+        <Link href="/privacy-policy">
+          <Button variant="ghost">
+            <Book className="size-4 mr-2" />
+            <p>Privacy Policy</p>
+          </Button>
+        </Link>
       </div>
 
       {/* <div className="space-y-4">
