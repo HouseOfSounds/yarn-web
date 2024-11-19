@@ -35,7 +35,7 @@ export const faqs = [
   {
     question: "Can I purchase tickets and merchandise through Yarn?",
     answer:
-      "Yes, Yarn offers detailed artist profiles where you can purchase tickets to events and buy merchandise directly through the app.",
+      "While tickets cannot be purchased directly from the app, Yarn offers detailed artist profiles where you can view upcoming shows. To purchase tickets you will be redirected to a 3rd party service. We haven't integrated Merchandize into the experience yet but it is coming soon.",
   },
   {
     question: "What are subcultures in Yarn?",
@@ -43,9 +43,9 @@ export const faqs = [
       "Subcultures in Yarn are communities based on specific music genres or interests. You can explore and join these subcultures to connect with like-minded fans..",
   },
   {
-    question: "How do rewards work in Yarn?",
+    question: "How do I use Yarn?",
     answer:
-      "Yarn offers a rewards system where you can earn points for various activities, which can be redeemed for exclusive content, merchandise, and more.",
+      "We have done our best to make Yarn easy & fun to use but understand that you may have trouble navigating all the features of the application. This is why we've created a YouTube channel that walks you through each of the features of the application.",
   },
   {
     question: "How can I contact support if I have issues with the app?",
