@@ -8,7 +8,8 @@ import { Input } from "@/components/ui/input";
 import { faqs, features } from "@/constants";
 import { cn } from "@/lib/utils";
 import axios from "axios";
-import { Sparkles } from "lucide-react";
+import { Instagram, Linkedin, Sparkles, Twitter } from "lucide-react";
+import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import { clarity } from "react-microsoft-clarity";
@@ -149,7 +150,8 @@ export default function Home() {
               </ContentItem>
             </div>
 
-            <div className="">
+            {/* FAQs */}
+            <div className="" id="faqs">
               <div className="text-sm tracking-wider text-[#FF5555]">FAQ</div>
               <h2 className="text-3xl font-bold capitalize">
                 Frequently asked <br /> questions
@@ -183,8 +185,32 @@ export default function Home() {
             </div>
 
             <Footer />
-            <div className="py-5 text-center text-sm capitalize">
+            <div className="pt-5 sm:pb-5  text-center text-sm capitalize">
               Copyright 2024. The House of Sounds. all rights reserved.
+            </div>
+
+            <div className="flex justify-center items-center sm:gap-1 md:gap-3 sm:hidden py-3">
+              <Button asChild size="icon" variant="ghost" className="">
+                <Link
+                  href="https://www.instagram.com/thehouseofsounds/"
+                  target="_blank"
+                >
+                  <Instagram className="size-5 md:size-6 " />
+                </Link>
+              </Button>
+              <Button asChild size="icon" variant="ghost" className="">
+                <Link href="https://x.com/THOSEAPP" target="_blank">
+                  <Twitter className="size-5 md:size-6 " />
+                </Link>
+              </Button>
+              <Button asChild size="icon" variant="ghost" className="">
+                <Link
+                  href="https://www.linkedin.com/company/the-house-of-sounds/"
+                  target="_blank"
+                >
+                  <Linkedin className="size-5 md:size-6 " />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
