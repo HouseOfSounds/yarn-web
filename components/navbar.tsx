@@ -2,7 +2,8 @@ import React from "react";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Twitter, X } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
             className=" hidden sm:flex"
           >
             <Link href="https://x.com/THOSEAPP" target="_blank">
-              <Twitter className="size-5 md:size-6 " />
+              <FaXTwitter className="size-5 md:size-6 " />
             </Link>
           </Button>
           <Button
