@@ -3,13 +3,13 @@ import Head from "next/head";
 
 const PrivacyPolicy = () => {
   return (
-    <>
+    <main className="px-6">
       <Head>
         <title>Privacy Policy - Yarn</title>
         <meta name="description" content="Privacy Policy of Yarn" />
       </Head>
       <Navbar />
-      <div className="mx-auto max-w-screen-lg w-full py-5 ">
+      <div className="mx-auto max-w-screen-lg w-full py-5   ">
         <main className="max-w-4xl mx-auto p-6">
           <h1 className="text-3xl font-semibold mb-4">Privacy Policy</h1>
           <p className="text-lg text-gray-700 mb-4">
@@ -159,7 +159,7 @@ const PrivacyPolicy = () => {
           </p>
         </main>
       </div>
-    </>
+    </main>
   );
 };
 

@@ -9,6 +9,7 @@ import { faqs, features } from "@/constants";
 import { cn } from "@/lib/utils";
 import axios from "axios";
 import { Instagram, Linkedin, Sparkles, Twitter } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useState } from "react";
@@ -163,7 +164,7 @@ export default function Home() {
                     key={index}
                     className={cn(
                       "bg-white rounded-lg p-8 shadow-md",
-                      (index + 1 === 1 || index + 1 === 4 || index + 1 === 5) &&
+                      (index === 0 || index === 2 || index === 4) &&
                         "bg-[#FF5555] text-white"
                     )}
                   >
@@ -171,9 +172,7 @@ export default function Home() {
                     <div
                       className={cn(
                         "text-sm text-muted-foreground",
-                        (index + 1 === 1 ||
-                          index + 1 === 4 ||
-                          index + 1 === 5) &&
+                        (index === 0 || index === 2 || index === 4) &&
                           "text-white"
                       )}
                     >
@@ -200,7 +199,7 @@ export default function Home() {
               </Button>
               <Button asChild size="icon" variant="ghost" className="">
                 <Link href="https://x.com/THOSEAPP" target="_blank">
-                  <Twitter className="size-5 md:size-6 " />
+                  <FaXTwitter className="size-5 md:size-6 " />
                 </Link>
               </Button>
               <Button asChild size="icon" variant="ghost" className="">
