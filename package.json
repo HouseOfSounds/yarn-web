@@ -26,6 +26,7 @@
     "react-twitter-conversion-tracker": "^1.0.0",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
+    "ua-parser-js": "^2.0.0",
     "unpopular-js": "^1.0.12"
   },
   "devDependencies": {
