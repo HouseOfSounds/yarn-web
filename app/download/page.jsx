@@ -13,10 +13,11 @@ const Download = () => {
   useEffect(() => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    const appScheme = "myapp://"; // Replace with your app's deep link scheme
+    const appScheme = "yarnapp://"; // Replace with your app's deep link scheme
     const androidPlayStoreLink =
-      "https://play.google.com/store/apps/details?id=com.myapp";
-    const iosAppStoreLink = "https://apps.apple.com/app/id123456789"; // Replace with your App Store link
+      "https://play.google.com/store/apps/details?id=com.thehouseofsounds.yarnapp";
+    const iosAppStoreLink =
+      "https://apps.apple.com/us/app/yarn-for-fans-music-lovers/id6737612928"; // Replace with your App Store link
 
     const isAndroidDevice = /android/i.test(userAgent);
     const isIOSDevice = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
@@ -30,14 +31,17 @@ const Download = () => {
       const deepLinkTimeout = setTimeout(() => {
         // If the app is not installed, redirect to the appropriate app store
         if (isAndroidDevice) {
-          window.location.href = androidPlayStoreLink;
+          // window.location.href = androidPlayStoreLink;
+          router.push(androidPlayStoreLink);
         } else if (isIOSDevice) {
-          window.location.href = iosAppStoreLink;
+          // window.location.href = iosAppStoreLink;
+          router.push(iosAppStoreLink);
         }
       }, 2000); // Wait before redirecting to app store
 
       // Try to open the app
-      window.location.href = appScheme;
+      // window.location.href = appScheme
+      router.push(appScheme);
 
       // Clear timeout if the user has the app installed
       return () => clearTimeout(deepLinkTimeout);
